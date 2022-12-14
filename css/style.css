@@ -51,7 +51,6 @@ div {
 }
 
 .profile-sidebar {
-  max-width: 440px;
   display: flex;
   flex-direction: column;
 
