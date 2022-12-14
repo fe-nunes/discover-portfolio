@@ -1,0 +1,308 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: var(--body-bg-color);
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 62px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-sidebar {
+  max-width: 440px;
+  height: 1120px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+}
+
+.profile-projects {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  gap: 30px;
+  max-width: 1400px;
+}
+
+.profile-avatar {
+  color: var(--text-color);
+  background: var(--bg-cards);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 60px;
+  border-radius: 10px;
+
+  gap: 10px;
+}
+
+.profile-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #75ef4b;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  color: var(--text-color);
+  background: var(--bg-cards);
+  border-radius: 10px;
+  padding: 50px 50px;
+}
+
+.social-icon img {
+  margin: 0;
+  padding: 0;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.social-media ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: var(--text-color);
+}
+
+.technologies {
+  color: var(--text-color);
+  background: var(--bg-cards);
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+
+.technologies h3 {
+  margin-left: -15px;
+  margin-bottom: 30px;
+}
+
+.technologies-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-items: center;
+}
+
+.technologies-item {
+  height: 30px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-techs);
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: 0;
+
+  color: var(--bg-cards);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.my-projects {
+  width: 1340px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-color);
+  background: var(--bg-cards);
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+
+.my-projects a {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.projects {
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 30px;
+}
+
+.project {
+  color: var(--text-color);
+  background: var(--bg-cards);
+  border-radius: 10px;
+
+  padding: 35px 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header-project {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.project span {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-description {
+  margin-bottom: 20px;
+}
+
+.footer-project {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-info {
+  display: flex;
+  gap: 10px;
+}
+
+.project-stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-branch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-technology {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-type-technology {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #75ef4b;
+}
+
+.post-container {
+  display: flex;
+  color: var(--text-color);
+  background: var(--bg-cards);
+  border-radius: 10px;
+
+  padding: 35px 25px;
+
+  gap: 10px;
+}
+
+.post-avatar img {
+  width: 145px;
+  height: 145px;
+  border-radius: 15px;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-data {
+  margin-bottom: 20px;
+}
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.post-info ul {
+  display: flex;
+  gap: 10px;
+}
+
+.post-info ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+@media (max-width: 1900px) {
+  .profile-projects {
+    width: 500px;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+  }
+
+  .profile-sidebar {
+    max-width: 500px;
+  }
+}
